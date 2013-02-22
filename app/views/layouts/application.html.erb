@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head >
 	<title><%= full_title(yield(:title)) %></title>
 	<%= stylesheet_link_tag "application", media: "all" %>
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 	<%= render 'layouts/shim' %>
+	
+
 </head>
-<body>
+<body .carousel('next')>
+	<div class="dropdown">
+  <!-- Link or button to toggle dropdown -->
+  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+    <li><a tabindex="-1" href="#">Action</a></li>
+    <li><a tabindex="-1" href="#">Another action</a></li>
+    <li><a tabindex="-1" href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
 	<%= render 'layouts/header' %>
 <div class="container">
 <% flash.each do |key, value| %>
