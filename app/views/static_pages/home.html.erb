@@ -1,3 +1,4 @@
+
 <% if signed_in? %>
 <div class="row">
 	<aside class="span4">
@@ -16,6 +17,7 @@
 		<%= render 'shared/feed' %>
 	</div>
 </div>
+
 <% else %>
 
 <div align="center">
@@ -25,7 +27,7 @@
   <strong>Welcome!</strong> To the new rails application...
 </div>
 </div><br>
-<div id="myCarousel" class="carousel slide" >
+<div id="myCarousel" class="carousel slide " >
 	
 	<!-- Carousel items -->
 	<div class="carousel-inner" >
@@ -51,5 +53,13 @@
 
 })
 
+setTimeout(function () {
+  $('.alert').alert('close')
+	}, 5000)
+
+$('#element').tooltip('show')
+
 </script>
 <% end %>
+
+
